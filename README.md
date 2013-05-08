@@ -15,7 +15,7 @@ The problem is, which one exists and in which order are they loaded ?
 
 WordPress Debug Bar, List Script &amp; Style Dependencies, an add-on to [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/), will list the dependencies.
 
-### Installtion
+### Installation
 
 Download and add as a WordPress plugin
 
