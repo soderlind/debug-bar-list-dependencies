@@ -24,7 +24,8 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					<tr><td>Order</td><td><b>Loaded</b></td><td><b>Dependencies</b></td></tr>
 					<?php
 				$i = 1;
-				foreach ( $wp_scripts->print_scripts() as $loaded_scripts ) {
+				
+				foreach ( $wp_scripts->do_items() as $loaded_scripts ) {
 
 					echo '<tr style="background-color:',  ( $i % 2 === 0 ) ? '#eee' : '#fff' , '"><td>', $i, '<td>', $loaded_scripts, '</td><td>', ( count( $wp_scripts->registered[$loaded_scripts]->deps ) > 0 ) ?  implode( " and ", $wp_scripts->registered[$loaded_scripts]->deps ) : '', '</td></tr>', "\n";
 					$i++;
@@ -33,9 +34,10 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					<tr><th colspan="3" style="font-size: 1.5em;font-weight: bold">Enqueued Styles</th></tr>
 					<tr><td>Order</td><td><b>Loaded</b></td><td><b>Dependencies</b></td></tr>
 					<?php
-				$i = 1;
-				foreach ( $wp_styles->registered as $handle => $loaded_styles ) {
-					echo '<tr style="background-color:',  ( $i % 2 === 0 ) ? '#eee' : '#fff' , '"><td>', $i, '<td>', $handle, '</td><td>', ( count( $wp_styles->registered[$handle]->deps ) > 0 ) ?  implode( " and ", $wp_styles->registered[$handle]->deps ) : '', '</td></tr>', "\n";
+
+				 $i = 1;
+				foreach ( $wp_styles->do_items() as $loaded_styles ) {
+					echo '<tr style="background-color:',  ( $i % 2 === 0 ) ? '#eee' : '#fff' , '"><td>', $i, '<td>', $loaded_styles, '</td><td>', ( count( $wp_styles->registered[$loaded_styles]->deps ) > 0 ) ?  implode( " and ", $wp_styles->registered[$loaded_styles]->deps ) : '', '</td></tr>', "\n";
 					$i++;
 				}
 ?>
