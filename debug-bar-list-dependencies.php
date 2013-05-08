@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Debug Bar List Script & Style Dependencies
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://soderlind.no/list-script-an…e-dependencies/ ‎
 Description:
 Author: Per Soderlind
