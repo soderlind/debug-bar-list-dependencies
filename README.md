@@ -1,7 +1,7 @@
 
 ## WordPress Debug Bar, List Script &amp; Style Dependencies
 
-
+WordPress Debug Bar, List Script &amp; Style Dependencies is an add-on to WordPress [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/)
 
 -----------------------
 
