@@ -1,5 +1,5 @@
 
-# WordPress Debug Bar, List Script &amp; Style Dependencies
+## WordPress Debug Bar, List Script &amp; Style Dependencies
 
 
 
@@ -17,7 +17,7 @@ WordPress Debug Bar, List Script &amp; Style Dependencies, an add-on to [Debug B
 
 ### Installtion
 
-Download and add as a WordPres plugin
+Download and add as a WordPress plugin
 
 ### Use
 
