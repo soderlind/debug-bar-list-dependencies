@@ -1,0 +1,32 @@
+.deps-table table{
+	margin-top: .5rem;
+	width: 100%;
+	margin-bottom: -8px;
+	clear: both;
+	font-family: 'Helvetica Neue',sans-serif;
+	color: #000;
+	line-height: 150%!important;
+	text-align: left;
+	font-size: 12px!important;
+}
+.deps-table tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.deps-table th {
+	vertical-align: top;
+	text-align: inherit;
+	padding: 10px;
+}
+
+.deps-table td {
+	text-align: left;
+	margin-bottom: 9px;
+	padding: 8px 10px;
+	line-height: 20px;
+	font-size: 12px!important;
+	display: table-cell;
+}
+

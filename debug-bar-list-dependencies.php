@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Debug Bar List Script & Style Dependencies
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://soderlind.no/list-script-an…e-dependencies/ ‎
 Description:
 Author: Per Soderlind
@@ -14,13 +14,24 @@ function ps_listdeps_debug_bar_panels( $a ) {
 
 		class ps_listdeps_Debug_Bar_Panel extends Debug_Bar_Panel {
 
+
+			function init() {
+				$this->enqueue();
+			}
+
+			function enqueue() {
+				wp_enqueue_style( 'debug-bar-list-deps', plugins_url( "css/debug-bar-list-deps.css", __FILE__ ), array('debug-bar'), '1.0.2' );
+			}
+
+
+
 			function render( ) {
 				global $wp_scripts, $wp_styles;
 ?>
 			<div class="xx">
 
-				<table width="100%" cellspacing="2" cellpadding="5" class="form-table">
-					<tr><th colspan="3" style="font-size: 1.5em;font-weight: bold">Enqueued Scripts</th></tr>
+				<table width="100%" cellspacing="2" cellpadding="5" class="deps-table">
+					<tr><th colspan="3" style="font-size: 1.5rem;font-weight: bold">Enqueued Scripts</th></tr>
 					<tr><td>Order</td><td><b>Loaded</b></td><td><b>Dependencies</b></td></tr>
 					<?php
 				$i = 1;
@@ -31,7 +42,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					$i++;
 				}
 ?>
-					<tr><th colspan="3" style="font-size: 1.5em;font-weight: bold">Enqueued Styles</th></tr>
+					<tr><th colspan="3" style="font-size: 1.5rem;font-weight: bold">Enqueued Styles</th></tr>
 					<tr><td>Order</td><td><b>Loaded</b></td><td><b>Dependencies</b></td></tr>
 					<?php
 
