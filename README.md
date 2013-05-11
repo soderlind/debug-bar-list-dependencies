@@ -17,7 +17,8 @@ WordPress Debug Bar, List Script &amp; Style Dependencies, an add-on to [Debug B
 
 ### Installation
 
-Download and add as a WordPress plugin
+1. Copy the 'debug-bar-list-dependencies' folder into your plugins folder
+1. Activate the plugin via the Plugins admin page
 
 ### Use
 
