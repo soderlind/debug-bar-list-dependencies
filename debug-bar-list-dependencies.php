@@ -2,8 +2,8 @@
 /*
 Plugin Name:	Debug Bar List Script & Style Dependencies
 Version:		1.0.5
-Plugin URI:		http://soderlind.no/list-script-an…e-dependencies/
-Description:
+Plugin URI:		http://soderlind.no/debug-bar-list-script-and-style-dependencies/
+Description:	Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
 Author:			Per Soderlind
 Author URI:		http://www.soderlind.no
 Text Domain:	debug-bar-list-dependencies
@@ -17,7 +17,8 @@ function ps_listdeps_debug_bar_panels( $a ) {
 		class ps_listdeps_Debug_Bar_Panel extends Debug_Bar_Panel {
 			
 			const DBLD_NAME = 'debug-bar-list-deps';
-			
+
+			const DBLD_STYLES_VERSION = '1.0.2';
 
 			function init() {
 				$this->enqueue();
@@ -25,7 +26,8 @@ function ps_listdeps_debug_bar_panels( $a ) {
 			}
 
 			function enqueue() {
-				wp_enqueue_style( 'debug-bar-list-deps', plugins_url( "css/debug-bar-list-deps.css", __FILE__ ), array('debug-bar'), '1.0.2' );
+				$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min' );
+				wp_enqueue_style( self::DBLD_NAME, plugins_url( 'css/debug-bar-list-deps' . $suffix . '.css', __FILE__ ), array( 'debug-bar' ), self::DBLD_STYLES_VERSION );
 			}
 
 			function render( ) {
