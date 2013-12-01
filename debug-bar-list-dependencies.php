@@ -18,7 +18,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 			
 			const DBLD_NAME = 'debug-bar-list-deps';
 
-			const DBLD_STYLES_VERSION = '1.0.2';
+			const DBLD_STYLES_VERSION = '1.0.5';
 
 			function init() {
 				$this->enqueue();
@@ -32,10 +32,18 @@ function ps_listdeps_debug_bar_panels( $a ) {
 
 			function render( ) {
 				global $wp_scripts, $wp_styles;
+				
+				$loaded_scripts = array_merge($wp_scripts->done, $wp_scripts->in_footer);
+				$loaded_scripts = array_unique($loaded_scripts);
+				$styles = $wp_styles->done;
+
 
 ?>
 			<div class="debug-bar-list-dependencies">
-				<h2><?php echo esc_html__( 'Enqueued Scripts', self::DBLD_NAME ); ?></h2>
+				<h2><span><?php echo esc_html__( 'Total Enqueued Scripts:', self::DBLD_NAME ); ?></span><?php echo count( $loaded_scripts ); ?></h2>
+				<h2><span><?php echo esc_html__( 'Total Enqueued Styles:', self::DBLD_NAME ); ?></span><?php echo count( $styles ); ?></h2>
+
+				<h3><?php echo esc_html__( 'Enqueued Scripts', self::DBLD_NAME ); ?></h3>
 				<table class="debug-bar-table deps-table">
 					<thead>
 						<tr><th><?php echo esc_html__( 'Order', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Loaded', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Dependencies', self::DBLD_NAME ); ?></th></tr>
@@ -43,8 +51,6 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					<tbody>
 					<?php
 				$i = 1;
-				$loaded_scripts = array_merge($wp_scripts->done, $wp_scripts->in_footer);
-				$loaded_scripts = array_unique($loaded_scripts);
 
 				foreach ( $loaded_scripts as $loaded_script) {
 
@@ -61,7 +67,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 ?>
 					</tbody>
   				</table>
-  				<h2><?php echo esc_html__( 'Enqueued Styles', self::DBLD_NAME ); ?></h2>
+  				<h3><?php echo esc_html__( 'Enqueued Styles', self::DBLD_NAME ); ?></h3>
 				<table class="debug-bar-table deps-table">
 					<thead>
 						<tr><th><?php echo esc_html__( 'Order', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Loaded', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Dependencies', self::DBLD_NAME ); ?></th></tr>
@@ -70,7 +76,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					<?php
 
 				$i = 1;
-				foreach ( $wp_styles->done as $loaded_styles ) {
+				foreach ( $styles as $loaded_styles ) {
 					echo '<tr><td>', $i, '<td>',
 						$loaded_styles,
 						'</td><td>',
@@ -90,7 +96,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 		}
 
 
-		$a[]=new ps_listdeps_Debug_Bar_Panel( __( 'Script & Style Dependencies', self::DBLD_NAME ) );
+		$a[]=new ps_listdeps_Debug_Bar_Panel( __( 'Script & Style Dependencies', ps_listdeps_Debug_Bar_Panel::DBLD_NAME ) );
 	}
 	return $a;
 }

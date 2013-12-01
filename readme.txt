@@ -58,6 +58,7 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 = 1.0.5 =
 * Made text strings translatable, added .pot file and Dutch translation
 * Added minified CSS file
+* Added total counts at the top of the page
 
 = 1.0.4. =
 * Added contributor
