@@ -1,11 +1,13 @@
 <?php
 /*
-Plugin Name:  Debug Bar List Script & Style Dependencies
-Version: 1.0.4
-Plugin URI: http://soderlind.no/list-script-an…e-dependencies/ ‎
+Plugin Name:	Debug Bar List Script & Style Dependencies
+Version:		1.0.5
+Plugin URI:		http://soderlind.no/list-script-an�e-dependencies/
 Description:
-Author: Per Soderlind
-Author URI: http://www.soderlind.no
+Author:			Per Soderlind
+Author URI:		http://www.soderlind.no
+Text Domain:	debug-bar-list-dependencies
+Domain Path:	/languages/
 */
 
 
@@ -13,10 +15,13 @@ function ps_listdeps_debug_bar_panels( $a ) {
 	if ( class_exists( 'Debug_Bar_Panel' ) ) {
 
 		class ps_listdeps_Debug_Bar_Panel extends Debug_Bar_Panel {
-
+			
+			const DBLD_NAME = 'debug-bar-list-deps';
+			
 
 			function init() {
 				$this->enqueue();
+				load_plugin_textdomain( self::DBLD_NAME, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 			}
 
 			function enqueue() {
@@ -28,10 +33,10 @@ function ps_listdeps_debug_bar_panels( $a ) {
 
 ?>
 			<div class="debug-bar-list-dependencies">
-				<h2>Enqueued Scripts</h2>
+				<h2><?php echo esc_html__( 'Enqueued Scripts', self::DBLD_NAME ); ?></h2>
 				<table class="debug-bar-table deps-table">
 					<thead>
-						<tr><th>Order</th><th>Loaded</th><th>Dependencies</th></tr>
+						<tr><th><?php echo esc_html__( 'Order', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Loaded', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Dependencies', self::DBLD_NAME ); ?></th></tr>
 					</thead>
 					<tbody>
 					<?php
@@ -44,7 +49,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					echo '<tr><td>', $i, '<td>',
 						$loaded_script,
 						'</td><td>',
-						( count( $wp_scripts->registered[$loaded_script]->deps ) > 0 ) ?  join(' and ', array_filter(array_merge(array(join(', ', array_slice($wp_scripts->registered[$loaded_script]->deps, 0, -1))), array_slice($wp_scripts->registered[$loaded_script]->deps, -1)))) : '&nbsp;',
+						( count( $wp_scripts->registered[$loaded_script]->deps ) > 0 ) ?  join( ' ' . __( 'and', self::DBLD_NAME ) . ' ', array_filter(array_merge(array(join(', ', array_slice($wp_scripts->registered[$loaded_script]->deps, 0, -1))), array_slice($wp_scripts->registered[$loaded_script]->deps, -1)))) : '&nbsp;',
 						'</td></tr>',
 						'<tr class="src"><td>&nbsp;</td><td colspan="2">',
 						$wp_scripts->registered[$loaded_script]->src,
@@ -54,10 +59,10 @@ function ps_listdeps_debug_bar_panels( $a ) {
 ?>
 					</tbody>
   				</table>
-  				<h2>Enqueued Styles</h2>
+  				<h2><?php echo esc_html__( 'Enqueued Styles', self::DBLD_NAME ); ?></h2>
 				<table class="debug-bar-table deps-table">
 					<thead>
-						<tr><th>Order</th><th>Loaded</th><th>Dependencies</th></tr>
+						<tr><th><?php echo esc_html__( 'Order', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Loaded', self::DBLD_NAME ); ?></th><th><?php echo esc_html__( 'Dependencies', self::DBLD_NAME ); ?></th></tr>
 					</thead>
 					<tbody>
 					<?php
@@ -67,7 +72,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 					echo '<tr><td>', $i, '<td>',
 						$loaded_styles,
 						'</td><td>',
-						( count( $wp_styles->registered[$loaded_styles]->deps ) > 0 ) ?  join(' and ', array_filter(array_merge(array(join(', ', array_slice($wp_styles->registered[$loaded_styles]->deps, 0, -1))), array_slice($wp_styles->registered[$loaded_styles]->deps, -1)))) : '&nbsp;',
+						( count( $wp_styles->registered[$loaded_styles]->deps ) > 0 ) ?  join( ' ' . __( 'and', self::DBLD_NAME ) . ' ', array_filter(array_merge(array(join(', ', array_slice($wp_styles->registered[$loaded_styles]->deps, 0, -1))), array_slice($wp_styles->registered[$loaded_styles]->deps, -1)))) : '&nbsp;',
 						'</td></tr>',
 						'<tr class="src"><td>&nbsp;</td><td colspan="2">',
 						$wp_styles->registered[$loaded_styles]->src,
@@ -83,7 +88,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 		}
 
 
-		$a[]=new ps_listdeps_Debug_Bar_Panel( 'Script & Style Dependencies' );
+		$a[]=new ps_listdeps_Debug_Bar_Panel( __( 'Script & Style Dependencies', self::DBLD_NAME ) );
 	}
 	return $a;
 }

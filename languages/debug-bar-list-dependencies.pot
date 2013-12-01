@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Debug Bar List Dependencies - a WordPress Plugin\n"
+"POT-Creation-Date: 2013-12-01 04:12+0100\n"
+"PO-Revision-Date: 2013-12-01 04:13+0100\n"
+"Last-Translator: EJ Reinders Folmer <poedit_nospam@adviesenzo.nl>\n"
+"Language-Team: \n"
+"Language: English (en_US)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_html_e;esc_attr__;esc_attr_e;_e;_n;"
+"_x;_ex;_nx\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../debug-bar-list-dependencies.php:33
+msgid "Enqueued Scripts"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:36 ../debug-bar-list-dependencies.php:62
+msgid "Order"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:36 ../debug-bar-list-dependencies.php:62
+msgid "Loaded"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:36 ../debug-bar-list-dependencies.php:62
+msgid "Dependencies"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:72
+msgid "and"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:59
+msgid "Enqueued Styles"
+msgstr ""
+
+#: ../debug-bar-list-dependencies.php:88
+msgid "Script & Style Dependencies"
+msgstr ""
