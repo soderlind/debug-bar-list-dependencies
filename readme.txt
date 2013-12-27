@@ -55,6 +55,9 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 == Changelog ==
 
+= Trunk =
+* Minor fix for '&' not being escaped in url's with query vars
+
 = 1.0.5 =
 * Made text strings translatable, added .pot file and Dutch translation
 * Added minified CSS file

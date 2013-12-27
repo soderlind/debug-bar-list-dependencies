@@ -60,7 +60,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 						( count( $wp_scripts->registered[$loaded_script]->deps ) > 0 ) ?  join( ' ' . __( 'and', self::DBLD_NAME ) . ' ', array_filter(array_merge(array(join(', ', array_slice($wp_scripts->registered[$loaded_script]->deps, 0, -1))), array_slice($wp_scripts->registered[$loaded_script]->deps, -1)))) : '&nbsp;',
 						'</td></tr>',
 						'<tr class="src"><td>&nbsp;</td><td colspan="2">',
-						$wp_scripts->registered[$loaded_script]->src,
+						esc_html($wp_scripts->registered[$loaded_script]->src),
 						'</td></tr>', "\n";
 					$i++;
 				}
@@ -83,7 +83,7 @@ function ps_listdeps_debug_bar_panels( $a ) {
 						( count( $wp_styles->registered[$loaded_styles]->deps ) > 0 ) ?  join( ' ' . __( 'and', self::DBLD_NAME ) . ' ', array_filter(array_merge(array(join(', ', array_slice($wp_styles->registered[$loaded_styles]->deps, 0, -1))), array_slice($wp_styles->registered[$loaded_styles]->deps, -1)))) : '&nbsp;',
 						'</td></tr>',
 						'<tr class="src"><td>&nbsp;</td><td colspan="2">',
-						$wp_styles->registered[$loaded_styles]->src,
+						esc_html($wp_styles->registered[$loaded_styles]->src),
 						'</td></tr>', "\n";
 					$i++;
 				}
