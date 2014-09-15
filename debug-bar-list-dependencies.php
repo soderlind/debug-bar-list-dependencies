@@ -1,13 +1,14 @@
 <?php
 /*
-Plugin Name:	Debug Bar List Script & Style Dependencies
-Version:		1.0.5
-Plugin URI:		http://soderlind.no/debug-bar-list-script-and-style-dependencies/
-Description:	Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
-Author:			Per Soderlind
-Author URI:		http://www.soderlind.no
-Text Domain:	debug-bar-list-dependencies
-Domain Path:	/languages/
+Plugin Name:  Debug Bar List Script & Style Dependencies
+Version:      1.0.5
+Plugin URI:   http://soderlind.no/debug-bar-list-script-and-style-dependencies/
+Description:  Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
+Author:       Per Soderlind
+Author URI:   http://www.soderlind.no
+Depends:      Debug Bar
+Text Domain:  debug-bar-list-dependencies
+Domain Path:  /languages/
 */
 
 
