@@ -16,6 +16,7 @@ table.deps-table {
 	font-size: 12px!important;
 	border: 0 none;
 	border-bottom: 1px solid #666;
+	table-layout: auto;
 }
 .deps-table tr {
 	display: table-row;
