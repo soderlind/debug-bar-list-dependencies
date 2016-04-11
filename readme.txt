@@ -54,11 +54,14 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 == Changelog ==
 
-= 1.0.6 =
+= Trunk =
 * Minor fix for '&' not being escaped in url's with query vars
 * Fix compatibility with the [Plugin Dependencies](http://wordpress.org/plugins/plugin-dependencies/) plugin
 * Fix weird table layout on front-end in combination with Twenty-Sixteen theme
 * Hard-code the text-domain for better compatibility with [GlotPress](https://translate.wordpress.org/projects/wp-plugins/debug-bar-list-dependencies).
+
+= 1.0.6 =
+* Tested with WordPress 3.9. Bumped version number.
 
 = 1.0.5 =
 * Made text strings translatable, added .pot file and Dutch translation
