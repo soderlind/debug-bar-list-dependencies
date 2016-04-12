@@ -34,5 +34,6 @@ Note, the front-end and back-end loads different scripts and styles.
 ### More Information
 
 * http://soderlind.no/debug-bar-list-script-and-style-dependencies/
-* http://codex.wordpress.org/Function_Reference/wp_enqueue_script
-* http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+* https://developer.wordpress.org/plugins/javascript/enqueuing/
+* https://developer.wordpress.org/reference/functions/wp_enqueue_script/
+* https://developer.wordpress.org/reference/functions/wp_enqueue_style/
