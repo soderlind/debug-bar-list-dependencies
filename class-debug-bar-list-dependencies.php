@@ -5,7 +5,7 @@
  * @package     WordPress\Plugins\Debug Bar List Dependencies
  * @author      Per Soderlind
  * @link        https://github.com/soderlind/debug-bar-list-dependencies
- * @version     1.0.6
+ * @version     1.1
  */
 
 if ( class_exists( 'Debug_Bar_Panel' ) && ! class_exists( 'PS_Listdeps_Debug_Bar_Panel' ) ) {
@@ -17,7 +17,7 @@ if ( class_exists( 'Debug_Bar_Panel' ) && ! class_exists( 'PS_Listdeps_Debug_Bar
 
 		const DBLD_NAME = 'debug-bar-list-deps';
 
-		const DBLD_STYLES_VERSION = '1.0.6';
+		const DBLD_STYLES_VERSION = '1.1';
 
 		/**
 		 * Constructor.

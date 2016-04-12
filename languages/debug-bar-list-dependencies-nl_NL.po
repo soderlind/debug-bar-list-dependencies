@@ -1,55 +1,79 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debug Bar Constants - a WordPress Plugin\n"
-"POT-Creation-Date: 2013-12-01 04:59+0100\n"
-"PO-Revision-Date: 2013-12-01 05:00+0100\n"
-"Last-Translator: EJ Reinders Folmer <poedit_nospam@adviesenzo.nl>\n"
+"POT-Creation-Date: 2016-04-12 10:15+0200\n"
+"PO-Revision-Date: 2016-04-12 10:16+0200\n"
+"Last-Translator: Juliette Reinders Folmer <wpplugins_nospam@adviesenzo.nl>\n"
 "Language-Team: Juliette Reinders Folmer\n"
-"Language: Dutch\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: __;esc_html__;esc_html_e;esc_attr__;esc_attr_e;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../debug-bar-list-dependencies.php:43
+#: class-debug-bar-list-dependencies.php:26
+msgid "Script & Style Dependencies"
+msgstr "Script & Stijl Afhankelijkheden"
+
+#: class-debug-bar-list-dependencies.php:74
 msgid "Total Enqueued Scripts:"
 msgstr "Totaal Enqueued Scripts:"
 
-#: ../debug-bar-list-dependencies.php:44
+#: class-debug-bar-list-dependencies.php:77
 msgid "Total Enqueued Styles:"
 msgstr "Totaal Enqueued Stijlen:"
 
-#: ../debug-bar-list-dependencies.php:46
+#: class-debug-bar-list-dependencies.php:81
 msgid "Enqueued Scripts"
 msgstr "Enqueued Scripts"
 
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Order"
-msgstr "Volgorde"
-
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Loaded"
-msgstr "Ingelezen"
-
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Dependencies"
-msgstr "Afhankelijkheden"
-
-#: ../debug-bar-list-dependencies.php:60 ../debug-bar-list-dependencies.php:83
-msgid "and"
-msgstr "en"
-
-#: ../debug-bar-list-dependencies.php:70
+#: class-debug-bar-list-dependencies.php:94
 msgid "Enqueued Styles"
 msgstr "Enqueued Stijlen"
 
-#: ../debug-bar-list-dependencies.php:99
-msgid "Script & Style Dependencies"
-msgstr "Script & Stijl Afhankelijkheden"
+#: class-debug-bar-list-dependencies.php:121
+msgid "Order"
+msgstr "Volgorde"
+
+#: class-debug-bar-list-dependencies.php:123
+msgid "Loaded"
+msgstr "Ingelezen"
+
+#: class-debug-bar-list-dependencies.php:125
+msgid "Dependencies"
+msgstr "Afhankelijkheden"
+
+#: class-debug-bar-list-dependencies.php:152
+msgid "and"
+msgstr "en"
+
+#. Plugin Name of the plugin/theme
+msgid "Debug Bar List Script & Style Dependencies"
+msgstr "Debug Bar Script & Stijl Afhankelijkheden"
+
+#. Plugin URI of the plugin/theme
+msgid "http://soderlind.no/debug-bar-list-script-and-style-dependencies/"
+msgstr "http://soderlind.no/debug-bar-list-script-and-style-dependencies/"
+
+#. Description of the plugin/theme
+msgid ""
+"Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug "
+"Bar."
+msgstr ""
+"Debug Bar Script & Stijl Afhankelijkheden is een toevoeging voor de "
+"WordPress Debug Bar."
+
+#. Author of the plugin/theme
+msgid "Per Soderlind"
+msgstr "Per Soderlind"
+
+#. Author URI of the plugin/theme
+msgid "http://www.soderlind.no/"
+msgstr "http://www.soderlind.no/"
 
 #~ msgid "Name"
 #~ msgstr "Naam"

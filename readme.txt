@@ -3,8 +3,8 @@ Contributors: PerS, jrf
 Donate link: http://soderlind.no/donate/
 Tags: debug, debug bar, development, wp_enqueue_script, wp_enqueue_style, script, styles, dependencies
 Requires at least: 3.4
-Tested up to: 4.4
-Stable tag: 1.0.6
+Tested up to: 4.5
+Stable tag: 1.1
 License: GPLv2 or later
 
 Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
@@ -54,34 +54,42 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 == Changelog ==
 
-= Trunk =
-* Minor fix for '&' not being escaped in url's with query vars
-* Fix compatibility with the [Plugin Dependencies](https://wordpress.org/plugins/plugin-dependencies/) plugin
-* Fix weird table layout on front-end in combination with Twenty-Sixteen theme
+= 1.1 =
+* Minor fix for '&' not being escaped in url's with query vars.
+* Fixed compatibility with the [Plugin Dependencies](https://wordpress.org/plugins/plugin-dependencies/) plugin.
+* Fixed weird table layout on front-end in combination with Twenty-Sixteen theme.
+* Fixed a bug where translations would not be loaded as the language file names were not in sync with the used text-domain.
 * Hard-code the text-domain for better compatibility with [GlotPress](https://translate.wordpress.org/projects/wp-plugins/debug-bar-list-dependencies).
-* Make loading of text-domain compatible with use of the plugin in the `must-use` plugins directory.
+* Made loading of text-domain compatible with use of the plugin in the `must-use` plugins directory.
+* General housekeeping.
+* Tested & found compatible with WP 4.5.
 
 = 1.0.6 =
 * Tested with WordPress 3.9. Bumped version number.
 
 = 1.0.5 =
-* Made text strings translatable, added .pot file and Dutch translation
-* Added minified CSS file
-* Added total counts at the top of the page
+* Made text strings translatable, added .pot file and Dutch translation.
+* Added minified CSS file.
+* Added total counts at the top of the page.
 
 = 1.0.4. =
-* Added contributor
+* Added contributor.
 
 = 1.0.3 =
-* (Partial) Bugfix for [Help tabs broken and missing scripts](https://github.com/soderlind/debug-bar-list-dependencies/issues/1)
-* Fix: duplicate script listings
-* New!: un-obtrusive script/style source line
-* Some other minor adjustments to compensate for the front-end themes
+* (Partial) Bugfix for [Help tabs broken and missing scripts](https://github.com/soderlind/debug-bar-list-dependencies/issues/1).
+* Fix: duplicate script listings.
+* New!: un-obtrusive script/style source line.
+* Some other minor adjustments to compensate for the front-end themes.
 
 = 1.0.2 =
-* Added styling
+* Added styling.
+
 = 1.0.1 =
-* Bugfix, fixed listing of styles and their dependencies
+* Bugfix, fixed listing of styles and their dependencies.
+
 = 1.0 = 
-* Initial release
+* Initial release.
+
+
+== Upgrade Notice ==
 

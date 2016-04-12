@@ -1,53 +1,79 @@
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Debug Bar List Dependencies - a WordPress Plugin\n"
-"POT-Creation-Date: 2013-12-01 04:59+0100\n"
-"PO-Revision-Date: 2013-12-01 04:59+0100\n"
-"Last-Translator: EJ Reinders Folmer <poedit_nospam@adviesenzo.nl>\n"
-"Language-Team: \n"
-"Language: English (en_US)\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Debug Bar List Script & Style Dependencies\n"
+"POT-Creation-Date: 2016-04-12 10:15+0200\n"
+"PO-Revision-Date: 2016-04-12 09:30+0200\n"
+"Last-Translator: Juliette Reinders Folmer <wpplugins_nospam@adviesenzo.nl>\n"
+"Language-Team: Juliette Reinders Folmer <wpplugins_nospam@adviesenzo.nl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: __;esc_html__;esc_html_e;esc_attr__;esc_attr_e;_e;_n;"
-"_x;_ex;_nx\n"
-"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: debug-bar-list-dependencies.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: ../debug-bar-list-dependencies.php:43
+#: class-debug-bar-list-dependencies.php:26
+msgid "Script & Style Dependencies"
+msgstr ""
+
+#: class-debug-bar-list-dependencies.php:74
 msgid "Total Enqueued Scripts:"
 msgstr ""
 
-#: ../debug-bar-list-dependencies.php:44
+#: class-debug-bar-list-dependencies.php:77
 msgid "Total Enqueued Styles:"
 msgstr ""
 
-#: ../debug-bar-list-dependencies.php:46
+#: class-debug-bar-list-dependencies.php:81
 msgid "Enqueued Scripts"
 msgstr ""
 
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Order"
-msgstr ""
-
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Loaded"
-msgstr ""
-
-#: ../debug-bar-list-dependencies.php:49 ../debug-bar-list-dependencies.php:73
-msgid "Dependencies"
-msgstr ""
-
-#: ../debug-bar-list-dependencies.php:60 ../debug-bar-list-dependencies.php:83
-msgid "and"
-msgstr ""
-
-#: ../debug-bar-list-dependencies.php:70
+#: class-debug-bar-list-dependencies.php:94
 msgid "Enqueued Styles"
 msgstr ""
 
-#: ../debug-bar-list-dependencies.php:99
-msgid "Script & Style Dependencies"
+#: class-debug-bar-list-dependencies.php:121
+msgid "Order"
+msgstr ""
+
+#: class-debug-bar-list-dependencies.php:123
+msgid "Loaded"
+msgstr ""
+
+#: class-debug-bar-list-dependencies.php:125
+msgid "Dependencies"
+msgstr ""
+
+#: class-debug-bar-list-dependencies.php:152
+msgid "and"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Debug Bar List Script & Style Dependencies"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://soderlind.no/debug-bar-list-script-and-style-dependencies/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug "
+"Bar."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Per Soderlind"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.soderlind.no/"
 msgstr ""
