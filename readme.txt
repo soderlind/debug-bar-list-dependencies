@@ -59,6 +59,7 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 * Fix compatibility with the [Plugin Dependencies](http://wordpress.org/plugins/plugin-dependencies/) plugin
 * Fix weird table layout on front-end in combination with Twenty-Sixteen theme
 * Hard-code the text-domain for better compatibility with [GlotPress](https://translate.wordpress.org/projects/wp-plugins/debug-bar-list-dependencies).
+* Make loading of text-domain compatible with use of the plugin in the `must-use` plugins directory.
 
 = 1.0.6 =
 * Tested with WordPress 3.9. Bumped version number.
