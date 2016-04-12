@@ -65,3 +65,8 @@ table.deps-table {
 .deps-table tr:nth-child(4n+4) {
     background-color: #eee;
 }
+
+.deps-table span.glue {
+	color: #666;
+	font-style: italic;
+}
