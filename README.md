@@ -1,7 +1,7 @@
 
 ## WordPress Debug Bar, List Script &amp; Style Dependencies
 
-WordPress Debug Bar, List Script &amp; Style Dependencies is an add-on to WordPress [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/)
+WordPress Debug Bar, List Script &amp; Style Dependencies is an add-on to WordPress [Debug Bar](https://wordpress.org/plugins/debug-bar/)
 
 -----------------------
 
@@ -13,7 +13,7 @@ We all know that when we're add a script or style to WordPress, we should use `w
 
 The problem is, which one exists and in which order are they loaded ?
 
-WordPress Debug Bar, List Script &amp; Style Dependencies, an add-on to [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/), will list the dependencies.
+WordPress Debug Bar, List Script &amp; Style Dependencies, an add-on to [Debug Bar](https://wordpress.org/plugins/debug-bar/), will list the dependencies.
 
 ### Installation
 
