@@ -30,7 +30,7 @@ $deps (dependencies), the handle name and an optional parameter, lets you contro
 
 The problem is, which one exists and in which order are they loaded ?
 
-Debug Bar List Script &amp; Style Dependencies, an add-on to [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/), will list the dependencies.
+Debug Bar List Script &amp; Style Dependencies, an add-on to [Debug Bar](https://wordpress.org/plugins/debug-bar/), will list the dependencies.
 
 = Use =
 
@@ -56,7 +56,7 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 = Trunk =
 * Minor fix for '&' not being escaped in url's with query vars
-* Fix compatibility with the [Plugin Dependencies](http://wordpress.org/plugins/plugin-dependencies/) plugin
+* Fix compatibility with the [Plugin Dependencies](https://wordpress.org/plugins/plugin-dependencies/) plugin
 * Fix weird table layout on front-end in combination with Twenty-Sixteen theme
 * Hard-code the text-domain for better compatibility with [GlotPress](https://translate.wordpress.org/projects/wp-plugins/debug-bar-list-dependencies).
 
