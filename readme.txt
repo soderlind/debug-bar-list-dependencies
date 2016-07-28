@@ -3,7 +3,7 @@ Contributors: PerS, jrf
 Donate link: http://soderlind.no/donate/
 Tags: debug, debug bar, development, wp_enqueue_script, wp_enqueue_style, script, styles, dependencies
 Requires at least: 3.4
-Tested up to: 4.5
+Tested up to: 4.6
 Stable tag: 1.1
 License: GPLv2 or later
 
@@ -15,7 +15,7 @@ We all know that when we're add a script or style to WordPress, we should use `w
 
 `
 function themeslug_enqueue_style() {
-	wp_enqueue_style( 'core', 'style.css', array('twentytwelve-style') ); 
+	wp_enqueue_style( 'core', 'style.css', array('twentytwelve-style') );
 }
 
 function themeslug_enqueue_script() {
@@ -54,6 +54,9 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 == Changelog ==
 
+= 1.1.1 =
+* Tested & found compatible with WP 4.6.
+
 = 1.1 =
 * Minor fix for '&' not being escaped in url's with query vars.
 * Fixed compatibility with the [Plugin Dependencies](https://wordpress.org/plugins/plugin-dependencies/) plugin.
@@ -87,9 +90,8 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 = 1.0.1 =
 * Bugfix, fixed listing of styles and their dependencies.
 
-= 1.0 = 
+= 1.0 =
 * Initial release.
 
 
 == Upgrade Notice ==
-

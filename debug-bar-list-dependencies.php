@@ -5,7 +5,7 @@
  * @package     WordPress\Plugins\Debug Bar List Dependencies
  * @author      Per Soderlind
  * @link        https://github.com/soderlind/debug-bar-list-dependencies
- * @version     1.1
+ * @version     1.1.1
  *
  * @wordpress-plugin
  * Plugin Name: Debug Bar List Script & Style Dependencies
