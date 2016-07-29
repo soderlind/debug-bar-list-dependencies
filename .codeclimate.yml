@@ -5,10 +5,8 @@ engines:
     config:
       languages:
         - php
-    exclude_paths:
-      - date-time-picker*.php
   eslint:
-    enabled: false
+    enabled: true
     env:
       jquery: true
   fixme:
@@ -23,6 +21,4 @@ ratings:
     - "**.php"
 exclude_paths:
   - node_modules/**/*
-  - languages/**
-  - css/**
-  - js/**
+  - _files/**
