@@ -32,7 +32,8 @@ if ( class_exists( 'Debug_Bar_Panel' ) && ! class_exists( 'PS_Listdeps_Debug_Bar
 		}
 
 		/**
-		 * Load the plugin text			 *
+		 * Load the plugin text strings.
+		 *
 		 * Compatible with use of the plugin in the must-use plugins directory.
 		 *
 		 * @param string $domain Text domain to load.

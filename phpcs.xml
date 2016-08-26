@@ -2,7 +2,14 @@
 <ruleset name="Debug Bar List Dependencies">
 	<description>The code standard for Debug Bar List Dependencies is WordPress.</description>
 
+	<!-- ##### PHP cross-version compatibility ##### -->
+	<config name="testVersion" value="5.2-99.0"/>
+	<rule ref="PHPCompatibility"/>
+
+
+	<!-- ##### WordPress sniffs #####-->
 	<rule ref="WordPress" />
+
 
 	<!-- exclude the 'empty' index files from some documentation checks -->
 	<rule ref="Squiz.Commenting.FileComment.WrongStyle">
