@@ -54,6 +54,9 @@ Note, the front-end and back-end loads different scripts and styles. Also, diffe
 
 == Changelog ==
 
+= Trunk =
+* Defer to just in time loading of translations for WP > 4.5.
+
 = 1.1.2 =
 * Tested & found compatible with WP 4.7.
 
