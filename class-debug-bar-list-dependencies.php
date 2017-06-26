@@ -36,9 +36,24 @@ if ( class_exists( 'Debug_Bar_Panel' ) && ! class_exists( 'PS_Listdeps_Debug_Bar
 		 *
 		 * Compatible with use of the plugin in the must-use plugins directory.
 		 *
+		 * {@internal No longer needed since WP 4.6, though the language loading in
+		 * WP 4.6 only looks at the `wp-content/languages/` directory and disregards
+		 * any translations which may be included with the plugin.
+		 * This is acceptable for plugins hosted on org, especially if the plugin
+		 * is new and never shipped with it's own translations, but not when the plugin
+		 * is hosted elsewhere.
+		 * Can be removed if/when the minimum required version for this plugin is ever
+		 * upped to 4.6. The `languages` directory can be removed in that case too.
+		 * See: {@link https://core.trac.wordpress.org/ticket/34213} and
+		 * {@link https://core.trac.wordpress.org/ticket/34114} }}
+		 *
 		 * @param string $domain Text domain to load.
 		 */
 		protected function load_textdomain( $domain ) {
+			if ( function_exists( '_load_textdomain_just_in_time' ) ) {
+				return;
+			}
+
 			if ( is_textdomain_loaded( $domain ) ) {
 				return;
 			}
