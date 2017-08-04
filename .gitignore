@@ -2,3 +2,4 @@
 /screenshot-2.png
 /.DS_Store
 /deploy.sh
+phpcs.xml
