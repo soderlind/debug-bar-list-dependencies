@@ -5,6 +5,7 @@ Tags: debug, debug bar, development, wp_enqueue_script, wp_enqueue_style, script
 Requires at least: 3.4
 Tested up to: 4.7
 Stable tag: 1.1.2
+Requires PHP: 5.2.4
 License: GPLv2 or later
 
 Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
